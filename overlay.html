@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beginner badge</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+    <style>
+        #corner {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            text-align: center;
+            font-family: 'IBM Plex Mono', monospace;
+            padding-right: 5%; 
+        }
+        #cfclogo {
+            transform: rotate(10deg);
+            width: 100px;   
+            height: 100px;  
+        }
+        .text {
+            position: relative;
+            z-index: 0;
+            margin-top: -30px; 
+            font-size: 15px;  
+            line-height: 1.2;
+            color: #fff;
+
+            -webkit-text-fill-color: #fff;
+            -webkit-text-stroke-width: 0.5px;
+            -webkit-text-stroke-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="corner">
+        <object id="cfclogo" type="image/svg+xml" data="cfc_logo_white_circle.svg"></object>
+        <div class="text">
+            scriptchaser1337<br>certified
+        </div>
+    </div>
+</body>
+</html>
