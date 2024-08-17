@@ -13,6 +13,7 @@
             text-align: center;
             font-family: 'IBM Plex Mono', monospace;
             padding-right: 5%; 
+            cursor: pointer; /* Add cursor pointer for better UX */
         }
         #cfclogo {
             transform: rotate(10deg);
@@ -47,11 +48,20 @@
     </style>
 </head>
 <body>
-    <div id="corner">
-        <object id="cfclogo" type="image/svg+xml" data="cfc_logo_white_circle.svg"></object>
+    <div id="corner" onclick="annoyingpopup()">
+        <object id="cfclogo" type="image/svg+xml" data="cfc_logo_white_circle.svg" onclick="openPopup()"></object>
         <div class="text">
             scriptchaser1337<br>certified
         </div>
     </div>
+
+    <script>
+        function annoyingpopup(event) {
+            if (event) {
+                event.stopPropagation();
+            }
+            window.open('https://scriptchaser1337.github.io/badge', '_blank', 'width=600,height=400');
+        }
+    </script>
 </body>
 </html>
