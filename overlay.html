@@ -18,6 +18,7 @@
             transform: rotate(10deg);
             width: 100px;   
             height: 100px;  
+            animation: spin 3.5s linear infinite;
         }
         .text {
             position: relative;
@@ -30,6 +31,18 @@
             -webkit-text-fill-color: #fff;
             -webkit-text-stroke-width: 0.5px;
             -webkit-text-stroke-color: #000;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(370deg);
+            }
+            100% {
+                transform: rotate(370deg);
+            }
         }
     </style>
 </head>
